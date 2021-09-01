@@ -211,12 +211,17 @@ flip card
 }
 
 .card-back div {
-    background: #9BB7DD;
+    background: #5987C6;
     border-radius: 25px;
     width: 100%;
     height: 100%;
     text-align: center;
     padding: calc( 40% / (var(--ampara-aspect-ratio)));
+}
+
+.card-body {
+    width: calc( 4vh / (var(--ampara-aspect-ratio))) !important;
+    height: calc( 4vh / (var(--ampara-aspect-ratio))) !important;
 }
 
 .card-back div p {
