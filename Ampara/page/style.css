@@ -163,16 +163,19 @@ header {
 
 /* FLIPCARD */
 
-/*
-flip card
-*/
-
-.card {
-    border: none !important;
-    padding: 1rem;
+.card-flip-square {
+    width: 100%;
+    height: 0;
+    /* A mágica está aqui */
+    padding-bottom: 100%;
+    /* ... e está aqui */
+    margin: 1%;
+    float: left;
+    position: relative;
+    margin: 1rem 0;
 }
 
-.card-flip>div {
+.card-flip-square>div {
     backface-visibility: hidden;
     transition: transform 300ms;
     transition-timing-function: linear;
@@ -180,61 +183,77 @@ flip card
     display: flex;
 }
 
-.card-front {
+.card-front-block {
     transform: rotateY(0deg);
     border-radius: 25px;
     background: #9BB7DD !important;
     padding: 1rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
-.card-front div {
+.card-front-block .card-body-centered {
     background: #9BB7DD;
     border-radius: 25px;
     border: 2px solid #BDCFE8;
     width: 100%;
     height: 100%;
     text-align: center;
-    padding: calc( 40% / (var(--ampara-aspect-ratio)));
+    padding: calc( 30% / (var(--ampara-aspect-ratio)));
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.card-back {
+.card-back-block {
     transform: rotateY(180deg);
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     border-radius: 25px;
     text-align: center;
-    padding: 1rem;
+    vertical-align: middle;
 }
 
-.card-back div {
+.card-back-block .card-body-centered {
     background: #5987C6;
     border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+}
+
+.card-body-centered>div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+    margin: auto 0;
+}
+
+.card-back-block:before, .card-front-block:before {
+    content: '';
+    display: inline-block;
     height: 100%;
-    text-align: center;
-    padding: calc( 40% / (var(--ampara-aspect-ratio)));
+    vertical-align: middle;
 }
 
-.card-body {
-    width: calc( 4vh / (var(--ampara-aspect-ratio))) !important;
-    height: calc( 4vh / (var(--ampara-aspect-ratio))) !important;
-}
-
-.card-back div p {
+.card-back-block div p {
     color: white;
 }
 
-.card-flip:hover .card-front {
+.card-flip-square:hover .card-front-block {
     transform: rotateY(-180deg);
 }
 
-.card-flip:hover .card-back {
+.card-flip-square:hover .card-back-block {
     transform: rotateY(0deg);
 }
+
+/* ----------------- */
 
 /* CARROUSEL */
 
