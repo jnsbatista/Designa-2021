@@ -60,34 +60,34 @@ header {
 /* FONT SIZE */
 
 .ampara p {
-    font-size: calc(var(--ampara-p)*1.8 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-p)*1.7 / (var(--ampara-aspect-ratio)));
     color: black;
     font-family: var(--ampara-Myriad-Regular);
 }
 
 .ampara .h1, h1 {
-    font-size: calc(var(--ampara-h1)*1.9 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-h1)*2.2 / (var(--ampara-aspect-ratio)));
 }
 
 .ampara .h2, h2 {
-    font-size: calc(var(--ampara-h2)*1.7 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-h2)*2.1 / (var(--ampara-aspect-ratio)));
     color: var(--ampara-third-purple);
     line-height: 2.2;
 }
 
 .ampara .h3, h3 {
     color: var(--ampara-third-purple);
-    font-size: calc(var(--ampara-h3)*1.6 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-h3)*2 / (var(--ampara-aspect-ratio)));
     line-height: 1.8;
     margin-top: 2rem;
 }
 
 .ampara .h4, h4 {
-    font-size: calc(var(--ampara-h4)*1.5 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-h4)*1.9 / (var(--ampara-aspect-ratio)));
 }
 
 .ampara .h5, h5 {
-    font-size: calc(var(--ampara-h4)*1.2 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-h4)*1.8 / (var(--ampara-aspect-ratio)));
 }
 
 .ampara .btn-efect img {
@@ -163,16 +163,19 @@ header {
 
 /* FLIPCARD */
 
-/*
-flip card
-*/
-
-.card {
-    border: none !important;
-    padding: 1rem;
+.card-flip-square {
+    width: 100%;
+    height: 0;
+    /* A mágica está aqui */
+    padding-bottom: 100%;
+    /* ... e está aqui */
+    margin: 1%;
+    float: left;
+    position: relative;
+    margin: 1rem 0;
 }
 
-.card-flip>div {
+.card-flip-square>div {
     backface-visibility: hidden;
     transition: transform 300ms;
     transition-timing-function: linear;
@@ -180,61 +183,77 @@ flip card
     display: flex;
 }
 
-.card-front {
+.card-front-block {
     transform: rotateY(0deg);
     border-radius: 25px;
     background: #9BB7DD !important;
     padding: 1rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
-.card-front div {
+.card-front-block .card-body-centered {
     background: #9BB7DD;
     border-radius: 25px;
     border: 2px solid #BDCFE8;
     width: 100%;
     height: 100%;
     text-align: center;
-    padding: calc( 40% / (var(--ampara-aspect-ratio)));
+    padding: calc( 30% / (var(--ampara-aspect-ratio)));
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.card-back {
+.card-back-block {
     transform: rotateY(180deg);
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     border-radius: 25px;
     text-align: center;
-    padding: 1rem;
+    vertical-align: middle;
 }
 
-.card-back div {
+.card-back-block .card-body-centered {
     background: #5987C6;
     border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+}
+
+.card-body-centered>div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+    margin: auto 0;
+}
+
+.card-back-block:before, .card-front-block:before {
+    content: '';
+    display: inline-block;
     height: 100%;
-    text-align: center;
-    padding: calc( 40% / (var(--ampara-aspect-ratio)));
+    vertical-align: middle;
 }
 
-.card-body {
-    width: calc( 4vh / (var(--ampara-aspect-ratio))) !important;
-    height: calc( 4vh / (var(--ampara-aspect-ratio))) !important;
-}
-
-.card-back div p {
+.card-back-block div p {
     color: white;
 }
 
-.card-flip:hover .card-front {
+.card-flip-square:hover .card-front-block {
     transform: rotateY(-180deg);
 }
 
-.card-flip:hover .card-back {
+.card-flip-square:hover .card-back-block {
     transform: rotateY(0deg);
 }
+
+/* ----------------- */
 
 /* CARROUSEL */
 
@@ -272,7 +291,7 @@ flip card
 }
 
 .carousel-inner {
-    padding: 2rem 3rem;
+    padding: 2rem calc(5% / (var(--ampara-aspect-ratio)));
 }
 
 .carousel-item .citacao div {
@@ -304,6 +323,7 @@ flip card
     border: 2px solid rgba(189, 207, 232, 1);
     padding: .8rem;
     border-radius: 25px;
+    margin: calc(5% / (var(--ampara-aspect-ratio))) 0;
 }
 
 .ponto-de-reflexao div {
@@ -371,6 +391,7 @@ flip card
 
 .e-cientifico .lupa {
     margin-top: -2rem;
+    padding: 0 calc( 5% / (var(--ampara-aspect-ratio)));
 }
 
 /* ACCORDION */
@@ -427,7 +448,7 @@ flip card
 }
 
 .ampara .accordion-body.active {
-    max-height: 10rem;
+    max-height: 100rem;
     padding: 2rem 1rem 1rem 1rem;
 }
 
