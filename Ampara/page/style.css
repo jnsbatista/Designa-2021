@@ -22,13 +22,60 @@ fone: +5548998386198
     --ampara-h3: calc(1.3rem + 0.6vw);
     --ampara-h4: calc(1.275rem + 0.3vw);
     --ampara-p: calc(1rem + 0.1vw);
-    --ampara-Myriad-Regular: 'Myriad Pro Regular';
-    --ampara-Myriad-Light: 'Myriad Pro Light';
-    --ampara-Myriad-Bold: 'Myriad Pro Bold';
+    --ampara-Lato-Light: 'Lato Light';
+    --ampara-Lato-Italic: 'Lato Italic';
+    --ampara-Lato-Regular: 'Lato Regular';
+    --ampara-Sansita-Regular: 'Sansita Regular';
     /* TAMANHO DE BOTÕES */
     --ampara-width-button-web: calc( 40% / (var(--ampara-aspect-ratio)));
     --ampara-width-line-web: calc( 10% / (var(--ampara-aspect-ratio)));
 }
+
+/* 
+    --ampara-Myriad-Regular: 'Myriad Pro Regular'; */
+
+/* FONTES  -------------------------- */
+
+/* latin-ext */
+
+@font-face {
+    font-family: 'Lato Light';
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Lato Italic';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v20/S6u8w4BMUTPHjxsAXC-q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Lato Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v20/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Sansita Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/sansita/v5/QldONTRRphEb_-V7LB6xTA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ---------------------------------- */
 
 /* GENERAL */
 
@@ -61,8 +108,8 @@ header {
 
 .ampara p {
     font-size: calc(var(--ampara-p)*1.7 / (var(--ampara-aspect-ratio)));
-    color: black;
-    font-family: var(--ampara-Myriad-Regular);
+    color: #4F4F4F;
+    font-family: var(--ampara-Lato-Regular);
 }
 
 .ampara .h1, h1 {
@@ -72,7 +119,8 @@ header {
 .ampara .h2, h2 {
     font-size: calc(var(--ampara-h2)*2.1 / (var(--ampara-aspect-ratio)));
     color: var(--ampara-third-purple);
-    line-height: 2.2;
+    margin-bottom: calc( 5% / (var(--ampara-aspect-ratio)));
+    font-family: var(--ampara-Sansita-Regular);
 }
 
 .ampara .h3, h3 {
@@ -80,14 +128,23 @@ header {
     font-size: calc(var(--ampara-h3)*2 / (var(--ampara-aspect-ratio)));
     line-height: 1.8;
     margin-top: 2rem;
+    font-family: var(--ampara-Sansita-Regular);
 }
 
 .ampara .h4, h4 {
     font-size: calc(var(--ampara-h4)*1.9 / (var(--ampara-aspect-ratio)));
+    font-family: var(--ampara-Sansita-Regular);
+    color: var(--ampara-third-purple);
 }
 
 .ampara .h5, h5 {
     font-size: calc(var(--ampara-h4)*1.8 / (var(--ampara-aspect-ratio)));
+    font-family: var(--ampara-Lato-Regular);
+}
+
+.ampara .h6, h6 {
+    font-size: calc(var(--ampara-h4)*1.6 / (var(--ampara-aspect-ratio)));
+    font-family: var(--ampara-Lato-Light);
 }
 
 .ampara .btn-efect img {
@@ -128,9 +185,10 @@ header {
 }
 
 .ampara .citacao p {
+    font-size: calc(var(--ampara-p)*1.8 / (var(--ampara-aspect-ratio)));
     color: var(--ampara-quarter-blue) !important;
     margin-bottom: 0;
-    font-style: italic;
+    font-family: var(--ampara-Lato-Italic);
     padding: 20px 40px 5px 40px;
     text-align: left;
     font-weight: 400;
@@ -145,6 +203,7 @@ header {
     font-weight: 400;
     margin-top: 0px !important;
     text-align: right;
+    font-size: calc(var(--ampara-p)*2 / (var(--ampara-aspect-ratio)));
 }
 
 /* COMPOSIÇÃO */
@@ -336,6 +395,12 @@ header {
     color: var(--ampara-quarter-blue);
 }
 
+.ponto-de-reflexao p:nth-child(1) {
+    color: var(--ampara-quarter-blue);
+    font-family: var(--ampara-Sansita-Regular);
+    font-size: calc(var(--ampara-p)*1.8 / (var(--ampara-aspect-ratio)));
+}
+
 /* MODAL */
 
 .ampara-modal {
@@ -369,6 +434,9 @@ header {
 
 .fique-por-dentro h5 {
     margin-bottom: 1rem;
+    font-family: var(--ampara-Lato-Regular);
+    font-weight: bold;
+    font-size: calc(var(--ampara-p)*1.9 / (var(--ampara-aspect-ratio)));
 }
 
 /* É CIENTIFICO */
@@ -387,6 +455,9 @@ header {
 
 .e-cientifico h5 {
     margin-bottom: 1rem;
+    font-family: var(--ampara-Lato-Regular);
+    font-weight: bold;
+    font-size: calc(var(--ampara-p)*1.9 / (var(--ampara-aspect-ratio)));
 }
 
 .e-cientifico .lupa {
