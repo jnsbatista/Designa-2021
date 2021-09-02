@@ -31,9 +31,6 @@ fone: +5548998386198
     --ampara-width-line-web: calc( 10% / (var(--ampara-aspect-ratio)));
 }
 
-/* 
-    --ampara-Myriad-Regular: 'Myriad Pro Regular'; */
-
 /* FONTES  -------------------------- */
 
 /* latin-ext */
@@ -82,7 +79,6 @@ fone: +5548998386198
 .ampara {
     margin: 0;
     padding: 0;
-    /* font-family: var(--ampara-Myriad-Regular, --ampara-Myriad-Light, --ampara-Myriad-Bold); */
     font-size: 100%;
     box-sizing: border-box;
 }
