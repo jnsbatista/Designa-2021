@@ -60,34 +60,34 @@ header {
 /* FONT SIZE */
 
 .ampara p {
-    font-size: calc(var(--ampara-p)*1.8 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-p)*1.7 / (var(--ampara-aspect-ratio)));
     color: black;
     font-family: var(--ampara-Myriad-Regular);
 }
 
 .ampara .h1, h1 {
-    font-size: calc(var(--ampara-h1)*1.9 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-h1)*2.2 / (var(--ampara-aspect-ratio)));
 }
 
 .ampara .h2, h2 {
-    font-size: calc(var(--ampara-h2)*1.7 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-h2)*2.1 / (var(--ampara-aspect-ratio)));
     color: var(--ampara-third-purple);
     line-height: 2.2;
 }
 
 .ampara .h3, h3 {
     color: var(--ampara-third-purple);
-    font-size: calc(var(--ampara-h3)*1.6 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-h3)*2 / (var(--ampara-aspect-ratio)));
     line-height: 1.8;
     margin-top: 2rem;
 }
 
 .ampara .h4, h4 {
-    font-size: calc(var(--ampara-h4)*1.5 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-h4)*1.9 / (var(--ampara-aspect-ratio)));
 }
 
 .ampara .h5, h5 {
-    font-size: calc(var(--ampara-h4)*1.2 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-h4)*1.8 / (var(--ampara-aspect-ratio)));
 }
 
 .ampara .btn-efect img {
@@ -291,7 +291,7 @@ header {
 }
 
 .carousel-inner {
-    padding: 2rem 3rem;
+    padding: 2rem calc(5% / (var(--ampara-aspect-ratio)));
 }
 
 .carousel-item .citacao div {
@@ -323,6 +323,7 @@ header {
     border: 2px solid rgba(189, 207, 232, 1);
     padding: .8rem;
     border-radius: 25px;
+    margin: calc(5% / (var(--ampara-aspect-ratio))) 0;
 }
 
 .ponto-de-reflexao div {
@@ -390,6 +391,7 @@ header {
 
 .e-cientifico .lupa {
     margin-top: -2rem;
+    padding: 0 calc( 5% / (var(--ampara-aspect-ratio)));
 }
 
 /* ACCORDION */
@@ -446,7 +448,7 @@ header {
 }
 
 .ampara .accordion-body.active {
-    max-height: 10rem;
+    max-height: 100rem;
     padding: 2rem 1rem 1rem 1rem;
 }
 
