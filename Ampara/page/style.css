@@ -503,6 +503,7 @@ header {
 
 .ampara .accordion-header i {
     transition: all 0.3s ease-in-out;
+    /* background: url(./images/seta.svg); */
 }
 
 .ampara .accordion-header.active i {
