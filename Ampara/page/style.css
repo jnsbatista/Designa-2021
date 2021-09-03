@@ -113,8 +113,8 @@ header {
 }
 
 .ampara .h2, h2 {
-    font-size: calc(var(--ampara-h2)*2.1 / (var(--ampara-aspect-ratio)));
-    color: var(--ampara-third-purple);
+    font-size: calc(var(--ampara-h2)*2.1 / (var(--ampara-aspect-ratio))) !important;
+    color: var(--ampara-third-purple) !important;
     margin-bottom: calc( 5% / (var(--ampara-aspect-ratio)));
     font-family: var(--ampara-Sansita-Regular);
 }
@@ -134,8 +134,9 @@ header {
 }
 
 .ampara .h5, h5 {
-    font-size: calc(var(--ampara-h4)*1.8 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-h4)*1.8 / (var(--ampara-aspect-ratio))) !important;
     font-family: var(--ampara-Lato-Regular);
+    color: var(--ampara-third-purple);
 }
 
 .ampara .h6, h6 {
@@ -196,10 +197,10 @@ header {
     margin-bottom: 0;
     font-style: italic;
     padding: 20px 40px 5px 40px;
-    font-weight: 400;
+    font-weight: 400 !important;
     margin-top: 0px !important;
     text-align: right;
-    font-size: calc(var(--ampara-p)*2 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-p)*2 / (var(--ampara-aspect-ratio))) !important;
 }
 
 /* COMPOSIÇÃO */
@@ -256,7 +257,6 @@ header {
     width: 100%;
     height: 100%;
     text-align: center;
-    padding: calc( 30% / (var(--ampara-aspect-ratio)));
     color: white;
     display: flex;
     align-items: center;
@@ -285,8 +285,12 @@ header {
 .card-body-centered>div {
     display: inline-block;
     vertical-align: middle;
-    width: 80%;
+    /* width: 80%; */
     margin: auto 0;
+}
+
+.card-body-centered h1 {
+    color: white !important;
 }
 
 .card-back-block:before, .card-front-block:before {
@@ -388,13 +392,13 @@ header {
 }
 
 .ponto-de-reflexao p {
-    color: var(--ampara-quarter-blue);
+    color: var(--ampara-quarter-blue) !important;
 }
 
 .ponto-de-reflexao p:nth-child(1) {
     color: var(--ampara-quarter-blue);
-    font-family: var(--ampara-Sansita-Regular);
-    font-size: calc(var(--ampara-p)*1.8 / (var(--ampara-aspect-ratio)));
+    font-family: var(--ampara-Sansita-Regular) !important;
+    font-size: calc(var(--ampara-p)*2.2 / (var(--ampara-aspect-ratio))) !important;
 }
 
 /* MODAL */
@@ -431,8 +435,9 @@ header {
 .fique-por-dentro h5 {
     margin-bottom: 1rem;
     font-family: var(--ampara-Lato-Regular);
-    font-weight: bold;
-    font-size: calc(var(--ampara-p)*1.9 / (var(--ampara-aspect-ratio)));
+    font-weight: bold !important;
+    font-size: calc(var(--ampara-p)*1.9 / (var(--ampara-aspect-ratio))) !important;
+    color: #882F87 !important;
 }
 
 /* É CIENTIFICO */
