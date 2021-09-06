@@ -110,6 +110,8 @@ header {
 
 .ampara .h1, h1 {
     font-size: calc(var(--ampara-h1)*2.2 / (var(--ampara-aspect-ratio)));
+    font-family: var(--ampara-Sansita-Regular);
+    color: var(--ampara-third-purple);
 }
 
 .ampara .h2, h2 {
@@ -120,27 +122,27 @@ header {
 }
 
 .ampara .h3, h3 {
-    color: var(--ampara-third-purple);
-    font-size: calc(var(--ampara-h3)*2 / (var(--ampara-aspect-ratio)));
-    line-height: 1.8;
+    color: var(--ampara-third-purple) !important;
+    font-size: calc(var(--ampara-h3)*2 / (var(--ampara-aspect-ratio))) !important;
+    line-height: 1.8 !important;
     margin-top: 2rem;
-    font-family: var(--ampara-Sansita-Regular);
+    font-family: var(--ampara-Sansita-Regular) !important;
 }
 
 .ampara .h4, h4 {
-    font-size: calc(var(--ampara-h4)*1.9 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-h4)*1.9 / (var(--ampara-aspect-ratio))) !important;
     font-family: var(--ampara-Sansita-Regular);
-    color: var(--ampara-third-purple);
+    color: var(--ampara-third-purple) !important;
 }
 
 .ampara .h5, h5 {
     font-size: calc(var(--ampara-h4)*1.8 / (var(--ampara-aspect-ratio))) !important;
-    font-family: var(--ampara-Lato-Regular);
-    color: var(--ampara-third-purple);
+    font-family: var(--ampara-Lato-Regular) !important;
+    color: var(--ampara-third-purple) !important;
 }
 
 .ampara .h6, h6 {
-    font-size: calc(var(--ampara-h4)*1.6 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-h4)*1.6 / (var(--ampara-aspect-ratio))) !important;
     font-family: var(--ampara-Lato-Light);
 }
 
@@ -158,6 +160,95 @@ header {
     max-width: 332px !important;
 }
 
+/* MOODLE FACE */
+
+.mf-ampara img:nth-child(1) {
+    position: absolute;
+    width: calc( 175.5% / (var(--ampara-aspect-ratio)));
+    top: 0;
+}
+
+.mf-ampara a:hover {
+    filter: saturate(250%);
+}
+
+.mf-ampara-m a:hover {
+    filter: saturate(250%);
+}
+
+.mf-ampara a:nth-child(n+2) {
+    position: absolute;
+    width: calc( 40% / (var(--ampara-aspect-ratio)));
+    top: 0;
+}
+
+.mf-ampara a:nth-child(2) {
+    left: calc( -3% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( -11.2% / (var(--ampara-aspect-ratio)));
+}
+
+.mf-ampara a:nth-child(3) {
+    left: calc( 16% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( 5.6% / (var(--ampara-aspect-ratio)));
+}
+
+.mf-ampara a:nth-child(4) {
+    left: calc( 70.5% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( 5.8% / (var(--ampara-aspect-ratio)));
+}
+
+.mf-ampara a:nth-child(5) {
+    left: calc( 125% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( 5.93% / (var(--ampara-aspect-ratio)));
+}
+
+.mf-ampara a:nth-child(6) {
+    left: calc( 125% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( 38.75912% / (var(--ampara-aspect-ratio)))
+}
+
+.mf-ampara a:nth-child(7) {
+    left: calc( 70.5% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( 38.75912% / (var(--ampara-aspect-ratio)))
+}
+
+.mf-ampara a:nth-child(8) {
+    left: calc( 16% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( 38.75912% / (var(--ampara-aspect-ratio)))
+}
+
+.mf-ampara a:nth-child(9) {
+    left: calc( 16% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( 77.6% / (var(--ampara-aspect-ratio)))
+}
+
+.mf-ampara a:nth-child(10) {
+    left: calc( 70.5% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( 77.6% / (var(--ampara-aspect-ratio)))
+}
+
+.mf-ampara a:nth-child(11) {
+    left: calc( 125% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( 77.6% / (var(--ampara-aspect-ratio)))
+}
+
+/* TITULOS */
+
+.ampara-titulo ul {
+    font-family: var(--ampara-Lato-Regular);
+    font-style: normal;
+    font-weight: normal;
+    line-height: 30px;
+    color: #AB74AE;
+    background: transparent !important;
+    list-style-type: disc !important;
+    list-style: inside !important;
+}
+
+.ampara-titulo h3 {
+    margin-top: 0 !important;
+}
+
 /* OBJETOS */
 
 /* CITAÇÃO */
@@ -165,6 +256,7 @@ header {
 .ampara .citacao {
     width: 100%;
     height: auto;
+    /* background-image: url(https://blocoa.org/cursos/draftfile.php/5/user/draft/959180202/citacao-l.png); */
     background-image: url(./images/citacao-l.png);
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -174,6 +266,7 @@ header {
 }
 
 .ampara .citacao div {
+    /* background-image: url(https://blocoa.org/cursos/draftfile.php/5/user/draft/959180202/citacao-r.png); */
     background-image: url(./images/citacao-r.png);
     background-position: 100% 100%;
     background-repeat: no-repeat;
@@ -457,8 +550,8 @@ header {
 .e-cientifico h5 {
     margin-bottom: 1rem;
     font-family: var(--ampara-Lato-Regular);
-    font-weight: bold;
-    font-size: calc(var(--ampara-p)*1.9 / (var(--ampara-aspect-ratio)));
+    font-weight: bold !important;
+    font-size: calc(var(--ampara-p)*1.9 / (var(--ampara-aspect-ratio))) !important;
 }
 
 .e-cientifico .lupa {
