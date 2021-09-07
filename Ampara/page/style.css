@@ -37,7 +37,6 @@ fone: +5548998386198
 
 @font-face {
     font-family: 'Lato Light';
-    font-family: 'Lato';
     font-style: normal;
     font-weight: 300;
     font-display: swap;
@@ -124,9 +123,9 @@ header {
 .ampara .h3, h3 {
     color: var(--ampara-third-purple) !important;
     font-size: calc(var(--ampara-h3)*2 / (var(--ampara-aspect-ratio))) !important;
-    line-height: 1.8 !important;
+    line-height: 1.8;
     margin-top: 2rem;
-    font-family: var(--ampara-Sansita-Regular) !important;
+    font-family: var(--ampara-Lato-Regular) !important;
 }
 
 .ampara .h4, h4 {
@@ -137,7 +136,7 @@ header {
 
 .ampara .h5, h5 {
     font-size: calc(var(--ampara-h4)*1.8 / (var(--ampara-aspect-ratio))) !important;
-    font-family: var(--ampara-Lato-Regular) !important;
+    font-family: var(--ampara-Lato-Regular);
     color: var(--ampara-third-purple) !important;
 }
 
@@ -245,7 +244,7 @@ header {
     list-style: inside !important;
 }
 
-.ampara-titulo h3 {
+.ampara-titulo h4 {
     margin-top: 0 !important;
 }
 
@@ -632,11 +631,6 @@ header {
     background-color: var(--ampara-first-purple);
 }
 
-.ampara li {
-    float: left;
-    /* font-size: calc(var(--ampara-p)*1.6 / (var(--ampara-aspect-ratio))); */
-}
-
 .ampara li a {
     display: block;
     color: white;
@@ -648,6 +642,25 @@ header {
 
 .ampara li a:hover {
     background-color: #111;
+}
+
+/* CONHEÇA */
+
+.ampara-conheca h3 {
+    font-family: var(--ampara-Lato-Light) !important;
+}
+
+.ampara-conheca h5 {
+    font-family: var(--ampara-Sansita-Regular) !important;
+    color: var(--ampara-quarter-purple);
+}
+
+.ampara-conheca ul {
+    background-color: transparent;
+}
+
+.ampara-button-saturate a:hover {
+    filter: saturate(250%);
 }
 
 @media (min-width: 1200px) {
