@@ -83,8 +83,8 @@ fone: +5548998386198
 }
 
 .ampara .container {
-    margin-top: calc(3% / (var(--ampara-aspect-ratio)));
-    margin-bottom: calc(3% / (var(--ampara-aspect-ratio)));
+    margin-top: calc(4% / (var(--ampara-aspect-ratio)));
+    margin-bottom: calc(4% / (var(--ampara-aspect-ratio)));
 }
 
 .ampara img {
@@ -102,19 +102,19 @@ header {
 /* FONT SIZE */
 
 .ampara p {
-    font-size: calc(var(--ampara-p)*1.7 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-p)*1.7 / (var(--ampara-aspect-ratio))) !important;
     color: #4F4F4F;
-    font-family: var(--ampara-Lato-Regular);
+    font-family: var(--ampara-Lato-Regular) !important;
 }
 
 .ampara .h1, h1 {
-    font-size: calc(var(--ampara-h1)*2.2 / (var(--ampara-aspect-ratio)));
+    font-size: calc(var(--ampara-h1)*2 / (var(--ampara-aspect-ratio)));
     font-family: var(--ampara-Sansita-Regular);
     color: var(--ampara-third-purple);
 }
 
 .ampara .h2, h2 {
-    font-size: calc(var(--ampara-h2)*2.1 / (var(--ampara-aspect-ratio))) !important;
+    font-size: calc(var(--ampara-h2)*1.9 / (var(--ampara-aspect-ratio))) !important;
     color: var(--ampara-third-purple) !important;
     margin-bottom: calc( 5% / (var(--ampara-aspect-ratio)));
     font-family: var(--ampara-Sansita-Regular);
@@ -122,27 +122,29 @@ header {
 
 .ampara .h3, h3 {
     color: var(--ampara-third-purple) !important;
-    font-size: calc(var(--ampara-h3)*2 / (var(--ampara-aspect-ratio))) !important;
+    font-size: calc(var(--ampara-h3)*1.8 / (var(--ampara-aspect-ratio))) !important;
     line-height: 1.8;
     margin-top: 2rem;
     font-family: var(--ampara-Lato-Regular) !important;
 }
 
 .ampara .h4, h4 {
-    font-size: calc(var(--ampara-h4)*1.9 / (var(--ampara-aspect-ratio))) !important;
+    font-size: calc(var(--ampara-h4)*1.7 / (var(--ampara-aspect-ratio))) !important;
     font-family: var(--ampara-Sansita-Regular);
     color: var(--ampara-third-purple) !important;
 }
 
 .ampara .h5, h5 {
-    font-size: calc(var(--ampara-h4)*1.8 / (var(--ampara-aspect-ratio))) !important;
+    font-size: calc(var(--ampara-h4)*1.6 / (var(--ampara-aspect-ratio))) !important;
     font-family: var(--ampara-Lato-Regular);
     color: var(--ampara-third-purple) !important;
 }
 
 .ampara .h6, h6 {
-    font-size: calc(var(--ampara-h4)*1.6 / (var(--ampara-aspect-ratio))) !important;
+    font-size: calc(var(--ampara-h4)*1.5 / (var(--ampara-aspect-ratio))) !important;
     font-family: var(--ampara-Lato-Light);
+    color: #AB74AE !important;
+    line-height: 1.5rem;
 }
 
 .ampara .btn-efect img {
@@ -162,7 +164,7 @@ header {
 /* MOODLE FACE */
 
 .mf-ampara img:nth-child(1) {
-    position: absolute;
+    position: relative;
     width: calc( 175.5% / (var(--ampara-aspect-ratio)));
     top: 0;
 }
@@ -187,48 +189,48 @@ header {
 }
 
 .mf-ampara a:nth-child(3) {
-    left: calc( 16% / (var(--ampara-aspect-ratio)));
+    left: calc( 17% / (var(--ampara-aspect-ratio)));
     margin-top: calc( 5.6% / (var(--ampara-aspect-ratio)));
 }
 
 .mf-ampara a:nth-child(4) {
-    left: calc( 70.5% / (var(--ampara-aspect-ratio)));
+    left: calc( 71.8% / (var(--ampara-aspect-ratio)));
     margin-top: calc( 5.8% / (var(--ampara-aspect-ratio)));
 }
 
 .mf-ampara a:nth-child(5) {
-    left: calc( 125% / (var(--ampara-aspect-ratio)));
+    left: calc( 127% / (var(--ampara-aspect-ratio)));
     margin-top: calc( 5.93% / (var(--ampara-aspect-ratio)));
 }
 
 .mf-ampara a:nth-child(6) {
-    left: calc( 125% / (var(--ampara-aspect-ratio)));
-    margin-top: calc( 38.75912% / (var(--ampara-aspect-ratio)))
+    left: calc( 127% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( 38% / (var(--ampara-aspect-ratio)))
 }
 
 .mf-ampara a:nth-child(7) {
-    left: calc( 70.5% / (var(--ampara-aspect-ratio)));
-    margin-top: calc( 38.75912% / (var(--ampara-aspect-ratio)))
+    left: calc( 71.8% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( 38% / (var(--ampara-aspect-ratio)))
 }
 
 .mf-ampara a:nth-child(8) {
-    left: calc( 16% / (var(--ampara-aspect-ratio)));
-    margin-top: calc( 38.75912% / (var(--ampara-aspect-ratio)))
+    left: calc( 17% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( 38% / (var(--ampara-aspect-ratio)))
 }
 
 .mf-ampara a:nth-child(9) {
-    left: calc( 16% / (var(--ampara-aspect-ratio)));
-    margin-top: calc( 77.6% / (var(--ampara-aspect-ratio)))
+    left: calc( 17% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( 76.6% / (var(--ampara-aspect-ratio)))
 }
 
 .mf-ampara a:nth-child(10) {
-    left: calc( 70.5% / (var(--ampara-aspect-ratio)));
-    margin-top: calc( 77.6% / (var(--ampara-aspect-ratio)))
+    left: calc( 71.8% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( 76.6% / (var(--ampara-aspect-ratio)))
 }
 
 .mf-ampara a:nth-child(11) {
-    left: calc( 125% / (var(--ampara-aspect-ratio)));
-    margin-top: calc( 77.6% / (var(--ampara-aspect-ratio)))
+    left: calc( 127% / (var(--ampara-aspect-ratio)));
+    margin-top: calc( 76.6% / (var(--ampara-aspect-ratio)))
 }
 
 /* TITULOS */
@@ -256,7 +258,7 @@ header {
     width: 100%;
     height: auto;
     /* background-image: url(https://blocoa.org/cursos/draftfile.php/5/user/draft/959180202/citacao-l.png); */
-    background-image: url(./images/citacao-l.png);
+    background-image: url(./images/identity/citacao-l.png);
     background-position: 0 0;
     background-repeat: no-repeat;
     border: none;
@@ -266,7 +268,7 @@ header {
 
 .ampara .citacao div {
     /* background-image: url(https://blocoa.org/cursos/draftfile.php/5/user/draft/959180202/citacao-r.png); */
-    background-image: url(./images/citacao-r.png);
+    background-image: url(./images/identity/citacao-r.png);
     background-position: 100% 100%;
     background-repeat: no-repeat;
     margin: 1rem 15px;
@@ -383,6 +385,7 @@ header {
 
 .card-body-centered h1 {
     color: white !important;
+    /* font-size: calc(var(--ampara-h1)*2 / (var(--ampara-aspect-ratio))); */
 }
 
 .card-back-block:before, .card-front-block:before {
@@ -460,6 +463,7 @@ header {
 .ampara .destaque p {
     color: var(--ampara-quarter-purple) !important;
     text-align: center;
+    margin-bottom: 0 !important;
 }
 
 .ampara .destaque {
@@ -551,6 +555,7 @@ header {
     font-family: var(--ampara-Lato-Regular);
     font-weight: bold !important;
     font-size: calc(var(--ampara-p)*1.9 / (var(--ampara-aspect-ratio))) !important;
+    color: #882F87 !important;
 }
 
 .e-cientifico .lupa {
@@ -595,11 +600,12 @@ header {
 
 .ampara .accordion-header i {
     transition: all 0.3s ease-in-out;
+    transform: rotate(180deg);
     /* background: url(./images/seta.svg); */
 }
 
 .ampara .accordion-header.active i {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 }
 
 .ampara .accordion-body {
@@ -617,6 +623,11 @@ header {
     padding: 2rem 1rem 1rem 1rem;
 }
 
+.seta-img img {
+    width: 60%;
+    vertical-align: inherit;
+}
+
 /* TRILHA DE APRENDIZAGEM */
 
 .ampara-activate {
@@ -627,8 +638,11 @@ header {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: var(--ampara-first-purple);
+    font-size: calc(var(--ampara-p)*1.7 / (var(--ampara-aspect-ratio))) !important;
+    color: #4F4F4F;
+    font-family: var(--ampara-Lato-Regular) !important;
 }
 
 .ampara li a {
