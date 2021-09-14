@@ -125,7 +125,7 @@ header {
     font-size: calc(var(--ampara-h3)*1.8 / (var(--ampara-aspect-ratio))) !important;
     line-height: 1.8;
     margin-top: 2rem;
-    font-family: var(--ampara-Lato-Regular) !important;
+    font-family: var(--ampara-Sansita-Regular) !important;
 }
 
 .ampara .h4, h4 {
@@ -159,6 +159,39 @@ header {
 
 .trilha-buttons img {
     max-width: 332px !important;
+}
+
+/* TABELA */
+
+.ampara table {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.ampara th {
+    font-family: var(--ampara-Lato-Regular);
+    padding: 10px;
+    width: auto;
+    background: rgba(221, 189, 223, 1);
+    line-height: 127.19%;
+    vertical-align: middle;
+    /* or 46px */
+    color: #882F87;
+}
+
+.ampara td {
+    padding: 10px;
+    width: auto;
+    color: #882F87;
+    background: #FAFAC8;
+}
+
+.ampara tr {
+    border-bottom: 2px solid #CDACCE;
+}
+
+.ampara tr:last-child, .ampara tr:first-child {
+    border-bottom: none;
 }
 
 /* MOODLE FACE */
@@ -472,6 +505,46 @@ header {
     padding: 1rem;
 }
 
+/* CUIDADOS EM SAUDE */
+
+.cuidados-em-saude-img img {
+    width: calc(120% / (var(--ampara-aspect-ratio)));
+    float: right;
+}
+
+.cuidados-em-saude-img {
+    padding: calc(10% / (var(--ampara-aspect-ratio))) 0;
+    /* border-right: calc(.6vh / (var(--ampara-aspect-ratio))) solid #FAFAC8; */
+}
+
+.cuidados-em-saude-content {
+    padding: calc(5% / (var(--ampara-aspect-ratio)));
+    border-left: calc(.6vh / (var(--ampara-aspect-ratio))) solid #FAFAC8;
+}
+
+.cuidados-em-saude-content p {
+    color: #882F87;
+}
+
+.cuidados-em-saude-mob {
+    width: 100%;
+    height: auto;
+    background-image: url(./images/identity/cuidados-em-saude-mob-circulo.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: none;
+    margin-bottom: 30px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.cuidados-em-saude-mob div {
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 1rem 15px;
+    padding: 2rem 0;
+    border-top: 1rem solid #FAFAC8;
+}
+
 /* PONTO DE REFLEXÃO */
 
 .ponto-de-reflexao {
@@ -620,7 +693,12 @@ header {
 
 .ampara .accordion-body.active {
     max-height: 100rem;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 1rem 2.5rem;
+}
+
+.ampara .accordion-body ul {
+    background-color: transparent;
+    list-style-type: disc;
 }
 
 .seta-img img {
