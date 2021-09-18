@@ -1,0 +1,197 @@
+/* FREE USER STYLE */
+
+/* NOVO */
+body {
+  overflow-y: scroll;
+  margin-top: 90px;
+}
+
+.caixa-destaque {
+  margin-top:10px;
+  margin-bottom: 0;
+}
+
+.box-destaque {
+  margin-bottom: 0;
+}
+
+.citacao {
+  margin-bottom: 0;
+}
+
+
+
+section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.image-responsive {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.color-box {
+    height: 100px;
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-black {
+    color: black;
+}
+
+.color-box p {
+    padding-top: 28px;
+}
+
+.listagem ul {
+    list-style: circle !important;
+    margin-left: 20px;
+}
+
+.align-text-center {
+    text-align: center;
+}
+
+
+/* NOVO */
+.color-light{
+    color: var(--THEME_COLOR_MODULE_ONE_LIGHT);
+  }
+  
+  /* NOVO */
+  .modal-body {
+    padding: 0 1rem;
+    margin-top: 0;
+  }
+  
+  /* NOVO */
+  .aos-rw{
+    position: relative;
+    width: 100%;
+  }
+  /* NOVO */
+  .aos-pa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  /* NOVO */
+  .modal-body {
+    padding: 0 1rem;
+    margin-top: 0;
+  }
+  
+  /* NOVO */
+  .tab-content p,
+  .tab-content ul li,
+  .tab-content ol li {
+    color: white;
+  }
+
+  /* novo */
+  h4.modal-title{
+    margin-top: 0 !important;
+  }
+
+
+  /* novo */
+  .modulo_1 .accordion .card-body p,  .modulo_1 .accordion .card-body ul,  .modulo_1 .accordion .card-body ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.flipster_carousel_slides {
+  margin-left: 32vw;
+}
+
+.flipster_slides {
+  margin-left: 26.5vw;
+}
+
+
+/* NOVO */
+@media screen and (max-width: 991px) {
+  body {
+      margin-top: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .caixa-destaque {
+    margin-top:60px;
+    margin-bottom: 0;
+  }
+
+  .flipster_carousel_slides {
+    margin-left: 19vw;
+  }
+
+  .flipster_slides {
+    margin-left: 21vw;
+  }
+  
+}
+
+@media (max-width: 575.98px) {
+    .caixa-destaque { 
+      padding: 10px 15px 0px 15px;
+      margin-bottom: 0;
+    }
+    .box-destaque {
+      padding: 1px 15px 1px 15px;
+      margin-bottom: 0;
+    }
+    .citacao p {
+      padding: 20px 15px 20px 15px;
+    }
+
+    .flipster_slides {
+      white-space: nowrap;
+      display: inline-flex;
+      margin-left: 8vw;
+    }
+
+    .flipster_carousel_slides {
+      margin-left: 12vw;
+    }
+
+    #content-viewer{
+      overflow-x: hidden;
+  }
+    
+}
+
+@media (max-width: 360px) {
+  .flipster_carousel_slides {
+    margin-left: 9vw;
+  }
+  .flipster_slides {
+    white-space: nowrap;
+    display: inline-flex;
+    margin-left: 12vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .flipster_carousel_slides {
+    margin-left: 2vw;
+  }
+  .flipster_slides {
+    white-space: nowrap;
+    display: inline-flex;
+    margin-left: 8vw;
+  }
+}

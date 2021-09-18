@@ -25,10 +25,6 @@ fone: +5548998386198
     --avr-width-line-web: calc( 10% / (var(--avr-aspect-ratio)));
 }
 
-/* ----------------------- */
-
-/* ----------------- */
-
 @font-face {
     font-family: 'Myriad Pro Regular';
     font-style: normal;
