@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Ampara</title>
+</head>
+
+
+<body>
+    <header class="ampara">
+        <img src="../images/identity/common/ampara-topo-arte.svg" alt="">
+        <img style="position: absolute; margin-top: calc( 16% / (var(--ampara-aspect-ratio))); right:0; width:calc( 35% / (var(--ampara-aspect-ratio))); max-width: 378px !important;"
+            src="../images/identity/common/ampara-topo-mulheres-abracadas.svg" alt="">
+        <img style="position: absolute; margin-top: calc( 17% / (var(--ampara-aspect-ratio))); left:calc( 26% / (var(--ampara-aspect-ratio))); width:calc( 45% / (var(--ampara-aspect-ratio))); max-width: 486px !important;"
+            src="../images/identity/common/ampara-topo-logo.svg" alt="">
+    </header>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <script>
+        $('.ampara-card').click(function () {
+            $(this).toggleClass('flipped');
+        });
+    </script>
+
+    <script>
+        const accordion = document.querySelector('[data-js="accordion"]');
+
+        const closeAccordionItem = accordionHeaderToBeClose => {
+            const accordionHeaderId = accordionHeaderToBeClose.dataset.accordionHeader
+            const accordionBodyToBeClose =
+                document.querySelector(`[data-accordion-body="${accordionHeaderId}"]`)
+
+            accordionHeaderToBeClose.classList.remove('active')
+            accordionBodyToBeClose.classList.remove('active')
+        }
+
+        const handleAccordionClick = e => {
+
+            const accordionHeaderId = e.target.dataset.accordionHeader
+            const clickedAccordionHeader = document.querySelector(`[data-accordion-header="${accordionHeaderId}"]`)
+            const accordionItemToOpened =
+                document.querySelector(`[data-accordion-body="${accordionHeaderId}"]`)
+
+            const accordionHeaderToBeClose = Array
+                .from(document.querySelectorAll('[data-js="accordion-header"]'))
+                .filter(accordionHeader => accordionHeader !== clickedAccordionHeader)
+                .find(accordionHeader => accordionHeader.classList.contains('active'))
+
+            if (!e.target.dataset.accordionHeader) {
+                return
+            }
+
+            if (accordionHeaderToBeClose) {
+                closeAccordionItem(accordionHeaderToBeClose)
+            }
+
+            clickedAccordionHeader.classList.toggle('active')
+            accordionItemToOpened.classList.toggle('active')
+        }
+        accordion.addEventListener('click', handleAccordionClick);
+    </script>
+</body>
+
+
+</html>

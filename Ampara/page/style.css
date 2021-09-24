@@ -113,9 +113,10 @@ header.ampara {
 }
 
 .ampara .h1, h1 {
+    line-height: 3rem !important;
     font-size: calc(var(--ampara-h1)*2 / (var(--ampara-aspect-ratio)));
     font-family: var(--ampara-Sansita-Regular);
-    color: var(--ampara-third-purple);
+    color: var(--ampara-third-purple) !important;
 }
 
 .ampara .h2, h2 {
@@ -174,6 +175,7 @@ header.ampara {
 }
 
 .ampara th {
+    border: none !important;
     font-family: var(--ampara-Lato-Regular);
     padding: 10px;
     width: auto;
@@ -185,6 +187,8 @@ header.ampara {
 }
 
 .ampara td {
+    border-left: none !important;
+    border-right: none !important;
     padding: 10px;
     width: auto;
     color: #882F87;
@@ -192,11 +196,11 @@ header.ampara {
 }
 
 .ampara tr {
-    border-bottom: 2px solid #CDACCE;
+    border-bottom: 2px solid #CDACCE !important;
 }
 
 .ampara tr:last-child, .ampara tr:first-child {
-    border-bottom: none;
+    border-bottom: none !important;
 }
 
 /* MOODLE FACE */
@@ -654,6 +658,11 @@ header.ampara {
     list-style-type: disc !important;
     background: transparent !important;
     margin: .5rem 2rem !important;
+    color: #882F87 !important;
+}
+
+.ampara .carousel-item p {
+    color: #882F87 !important;
 }
 
 .ampara .carousel-item div:first-child {
@@ -700,9 +709,27 @@ header.ampara {
     color: #882F87;
 }
 
-.ampara .cuidados-em-saude-content h6 {
+.ampara .cuidados-em-saude-content ul, .cuidados-em-saude-mob-content ul {
+    list-style-type: disc !important;
+    background-color: transparent !important;
+    color: #882F87 !important;
+    padding-left: 1rem !important;
+}
+
+.ampara .cuidados-em-saude-content a, .cuidados-em-saude-mob-content a {
+    display: unset !important;
+    padding: 0 !important;
+    font-size: calc(var(--ampara-p)*1.7 / (var(--ampara-aspect-ratio))) !important;
+}
+
+.ampara .cuidados-em-saude-content a:hover, .cuidados-em-saude-mob-content a:hover {
+    background: none !important;
+}
+
+.ampara .cuidados-em-saude-content h5 {
     color: #882F87 !important;
     margin-bottom: 2rem;
+    font-family: var(--ampara-Sansita-Regular) !important;
 }
 
 .ampara .cuidados-em-saude-mob {
@@ -722,7 +749,7 @@ header.ampara {
     height: 3px;
     top: 0;
     margin-top: 47px;
-    z-index: -100;
+    z-index: -1;
 }
 
 .ampara .cuidados-em-saude-mob .linha-amarela-i {
@@ -731,7 +758,6 @@ header.ampara {
     height: 3px;
     top: 0;
     margin-top: 20px;
-    z-index: -100;
 }
 
 .ampara .cuidados-em-saude-mob .cuidados-em-saude-mob-content {
@@ -755,6 +781,10 @@ header.ampara {
 }
 
 .ampara .teste-seus-conhecimentos h4 {
+    color: #882F87 !important;
+}
+
+.ampara .teste-seus-conhecimentos h4 a {
     color: #882F87 !important;
 }
 
