@@ -31,6 +31,11 @@
 
 
 
+
+
+
+
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -64,13 +69,8 @@
     </script>
 
     <script>
-        $('.ampara-card').click(function () {
-            $(this).toggleClass('flipped');
-        });
-    </script>
-
-    <script>
         const accordion = document.querySelector('[data-js="accordion"]');
+        const accordion2 = document.querySelector('[data-js="accordion2"]');
 
         const closeAccordionItem = accordionHeaderToBeClose => {
             const accordionHeaderId = accordionHeaderToBeClose.dataset.accordionHeader
@@ -105,6 +105,13 @@
             accordionItemToOpened.classList.toggle('active')
         }
         accordion.addEventListener('click', handleAccordionClick);
+        accordion2.addEventListener('click', handleAccordionClick);
+    </script>
+
+    <script>
+        $('.ampara-card').click(function () {
+            $(this).toggleClass('flipped');
+        });
     </script>
 </body>
 

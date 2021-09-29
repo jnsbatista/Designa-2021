@@ -25,6 +25,7 @@ fone: +5548998386198
     --ampara-Lato-Light: 'Lato Light';
     --ampara-Lato-Italic: 'Lato Italic';
     --ampara-Lato-Regular: 'Lato Regular';
+    --ampara-Lato-Bold: 'Lato Bold';
     --ampara-Sansita-Regular: 'Sansita Regular';
     /* TAMANHO DE BOTÕES */
     --ampara-width-button-web: calc( 40% / (var(--ampara-aspect-ratio)));
@@ -59,6 +60,15 @@ fone: +5548998386198
     font-weight: 400;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/lato/v20/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Lato Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -165,6 +175,13 @@ header.ampara {
 
 .ampara .trilha-buttons img {
     max-width: 332px !important;
+}
+
+.aalink.focus, .aalink:focus, #page-footer a:not([class]).focus, #page-footer a:not([class]):focus, .arrow_link.focus, .arrow_link:focus, a:not([class]).focus, a:not([class]):focus, .activityinstance>a.focus, .activityinstance>a:focus {
+    outline: none !important;
+    color: unset !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
 
 /* TABELA */
@@ -663,6 +680,11 @@ header.ampara {
 
 .ampara .carousel-item p {
     color: #882F87 !important;
+    margin-bottom: 1rem !important;
+}
+
+.ampara .carousel-item h6 {
+    color: #882F87 !important;
 }
 
 .ampara .carousel-item div:first-child {
@@ -739,7 +761,7 @@ header.ampara {
     background-position: 0 0;
     background-repeat: no-repeat;
     border: none;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     border-radius: 10px 10px 10px 10px;
 }
 
@@ -770,6 +792,7 @@ header.ampara {
     padding: 0 1rem 0 5rem;
     margin-bottom: 1rem;
     color: #882F87 !important;
+    font-family: var(--ampara-Sansita-Regular) !important;
 }
 
 /* TESTE SEUS CONHECIMENTOS */
@@ -782,6 +805,11 @@ header.ampara {
 
 .ampara .teste-seus-conhecimentos h4 {
     color: #882F87 !important;
+}
+
+.ampara .teste-seus-conhecimentos p {
+    color: #882F87 !important;
+    margin-bottom: 1rem !important;
 }
 
 .ampara .teste-seus-conhecimentos h4 a {
@@ -1005,7 +1033,7 @@ header.ampara {
 
 .ampara .fique-por-dentro {
     background: #FAFAC8;
-    padding: 1rem 1rem 0.1rem 1rem;
+    padding: 1rem;
     height: min-content;
     border-radius: 15px;
     color: #882F87 !important;
@@ -1014,6 +1042,7 @@ header.ampara {
 
 .ampara .fique-por-dentro p {
     color: #882F87 !important;
+    word-break: break-word;
 }
 
 .ampara .fique-por-dentro h5 {
@@ -1022,6 +1051,62 @@ header.ampara {
     font-weight: bold !important;
     font-size: calc(var(--ampara-p)*1.9 / (var(--ampara-aspect-ratio))) !important;
     color: #882F87 !important;
+}
+
+/* TRILHA DE APRENDIZAGEM TOPO*/
+
+.ampara .trilha-background {
+    background: rgba(221, 189, 223, .5);
+    padding: .5rem 1rem;
+    display: inline-block;
+    border-radius: 50px;
+    position: relative;
+}
+
+.ampara .trilha-background p {
+    margin: 0
+}
+
+.ampara .trilha-de-aprendi h6 {
+    font-family: var(--ampara-Lato-Bold) !important;
+}
+
+.ampara .trilha-background a {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.ampara .trilha-background a.active {
+    color: #882F87 !important;
+}
+
+.ampara .trilha-background .trilha-next-buttom {
+    right: -4%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 1.5%;
+}
+
+.ampara .trilha-background .trilha-prev-buttom {
+    left: -4%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 1.5%;
 }
 
 /* É CIENTIFICO */
@@ -1034,7 +1119,7 @@ header.ampara {
 
 .ampara .e-cientifico {
     background: #FAFAC8;
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem;
     height: min-content;
     border-radius: 15px;
     color: #882F87 !important;
@@ -1042,6 +1127,7 @@ header.ampara {
 
 .ampara .e-cientifico p {
     color: #882F87 !important;
+    word-break: break-word;
 }
 
 .ampara .e-cientifico h5 {
